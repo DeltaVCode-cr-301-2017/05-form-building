@@ -51,9 +51,39 @@
   font-weight: bold;
   text-decoration: none;
 }
+.entryForm label{
+  display: block;
+  margin: 15px 0;
+  font-weight: bold;
+}
+.entryForm textarea{
+  width: 80%;
+  max-width: 500px;
+  resize:none;
+}
 
 /*TODO: Add CSS for the "article-export" portion of our new page*/
-
+.articleJson{
+  display:block;
+  resize:none;
+}
+.articleExport{
+  font-style: italic;
+  color: #666;
+}
+.articleExport span {
+  padding: 5px;
+  border-bottom: solid 1px #ccc;
+}
+.articleExport input{
+  margin: 0;
+  padding: 0 0 20px;
+  border: none;
+  display: block;
+  min-height: 100px;
+  width: 100%;
+  border-bottom: solid 1px #ccc;
+}
 
 @media only screen and (min-width: 640px) {
   .icon-menu {
