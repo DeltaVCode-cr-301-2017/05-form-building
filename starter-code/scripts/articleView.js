@@ -80,8 +80,8 @@ articleView.initNewArticlePage = function() {
 
   // TODO: The new articles we create will be copy/pasted into our source data file.
   // Set up this "export" functionality. We can hide it for now, and show it once we have data to export.
-
-  $('#article-json').on('focus', function(){
+  $('#export-field').hide();
+  $('#articleJson').on('focus', function(){
     this.select();
   });
 
@@ -111,7 +111,8 @@ articleView.create = function() {
   $('pre code').each();
 
   // TODO: Show our export field, and export the new article as JSON, so it's ready to copy/paste into blogArticles.js:
-
+  $('#export-field').show();
+  $('#articleJson').val(JSON.stringify(article) + ',');
 };
 
 
