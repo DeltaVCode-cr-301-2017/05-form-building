@@ -51,6 +51,17 @@
   font-weight: bold;
   text-decoration: none;
 }
+.entry-form label{
+  display:block;
+  font-weight: bold;
+  color: magenta;
+  padding: 15px 0;
+
+}
+.entry-form textarea{
+  resize: none;
+
+}
 
 /*TODO: Add CSS for the "article-export" portion of our new page*/
 
