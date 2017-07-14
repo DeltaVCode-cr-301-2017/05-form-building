@@ -63,8 +63,9 @@
 }
 
 /*TODO: Add CSS for the "article-export" portion of our new page*/
-.articleJson span{
+.articleJson{
   display:block;
+  resize:none;
 }
 .articleExport{
   font-style: italic;
