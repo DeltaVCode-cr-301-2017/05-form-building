@@ -54,6 +54,21 @@
 
 /*TODO: Add CSS for the "article-export" portion of our new page*/
 
+.entry-form label {
+  display: block;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.entry-form label textarea:focus {
+  color: red;
+}
+
+textarea {
+  width: 80%;
+  max-width: 500px;
+  resize: none;
+}
 
 @media only screen and (min-width: 640px) {
   .icon-menu {
