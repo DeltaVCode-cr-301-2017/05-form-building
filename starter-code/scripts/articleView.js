@@ -93,7 +93,7 @@ articleView.create = function() {
   // TODO: Set up a var to hold the new article we are creating.
   var article;
   // Clear out the #articles element, so we can put in the updated preview
-  $('#articles').empty();
+  $('#preview').empty();
   // TODO: Instantiate an article based on what's in the form fields:
   article = new Article({
     title: $('#articleTitle').val()
