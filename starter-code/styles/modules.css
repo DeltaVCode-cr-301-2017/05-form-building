@@ -51,6 +51,31 @@
   font-weight: bold;
   text-decoration: none;
 }
+.entry-form label{
+  display:block;
+  font-weight: bold;
+  color: magenta;
+  padding: 15px 0;
+
+}
+.entry-form textarea{
+  resize: none;
+
+}
+.article-export label{
+
+}
+.article-export input{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+  min-height: 100px;
+  width: 100%;
+  border-bottom: 1px solid black;
+
+
+}
 
 /*TODO: Add CSS for the "article-export" portion of our new page*/
 
