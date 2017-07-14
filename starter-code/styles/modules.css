@@ -6,6 +6,40 @@
   float: left;
   padding: 0 0 .2em 1em;
 }
+.entry-form label{
+  display: block;
+  margin: 15px 0px;
+  font-weight: bold;
+}
+
+.entry-form textarea{
+  width: 80%;
+  max-width: 500px;
+  resize: none;
+
+}
+.article-export label{
+}
+.article-export {
+  border: solid 1px grey;
+  padding: 5px;
+  margin: 50px;
+
+}
+.article-export span {
+  font-style:
+}
+
+.article-export input {
+  margin: 0;
+  padding: 0 0 20px;
+  border: none;
+  display: block;
+  height: auto;
+  min-height: 100px;
+  width: 100%;
+  border-bottom: solid 1px red;
+}
 
 .icon-menu {
   font-size: 3em;
