@@ -34,7 +34,33 @@
 
       <section id="write" class="tab-content">
         <h1>Create New Article</h1>
-        <!-- TODO: Set up a form to accept user input for a new blog article. Remember that we need:
+        <form action="#" id="newForm" class="entryForm">
+          <label>
+            <span>Title:</span>
+            <input type="text" id="articleTitle" placeholder="Article Title" required/>
+          </label>
+          <label for="articleBody">
+            <span>Article Body:</span>
+          </label>
+            <textarea name="articleBody" id="articleBody" rows="8" cols="40" required></textarea>
+          <label>
+            <span>Author:</span>
+            <input type="text" id="articleAuthor" placeholder="Article Author" required/>
+          </label>
+          <label>
+            <span>Author's URL:</span>
+            <input type="text" id="articleAuthorsUrl" placeholder="Article Author's URL" required/>
+          </label>
+          <label>
+            <span>Category:</span>
+            <input type="text" id="articleCategory" placeholder="Article Category" required/>
+          </label>
+          <label>
+            <input type="checkbox" id="articlePublished"/>
+            <span>Publish</span>
+          </label>
+        </form>
+        <!-- DONE: Set up a form to accept user input for a new blog article. Remember that we need:
                    1. Article title
                    2. Article body
                    3. Article author
