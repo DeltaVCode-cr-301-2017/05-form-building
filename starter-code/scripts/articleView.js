@@ -78,7 +78,7 @@ articleView.initNewArticlePage = function() {
   articleView.handleMainNav();
   // TODO: The new articles we create will be copy/pasted into our source data file.
   // Set up this "export" functionality. We can hide it for now, and show it once we have data to export.
-
+  $('#export-field').hide();
   $('#article-json').on('focus', function(){
     this.select();
   });
@@ -97,7 +97,7 @@ articleView.create = function() {
   article = new Article({
     title: $('#article-title').val(),
     author: $('#article-author').val(),
-    authorurl: $('#').val(),
+    authorurl: $('article-authorsurl').val(),
     category: $('#article-category').val(),
     body: $('#article-body').val(),
     publishedOn: $('#article-published:checked').length ? new Date() : null
@@ -107,10 +107,12 @@ articleView.create = function() {
   $('#article-preview').append(article.toHtml());
 
   // TODO: Activate the highlighting of any code blocks; look at the documentation for hljs to see how to do this by placing a callback function in the .each():
-  $('pre code').each();
-
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
   // TODO: Show our export field, and export the new article as JSON, so it's ready to copy/paste into blogArticles.js:
-
+  $('#export-field').show();
+  $('#article-json').val(JSON.stringify(article) + ',');
 };
 
 
