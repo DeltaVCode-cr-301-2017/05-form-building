@@ -60,7 +60,7 @@
   font-weight: bold;
 }
 
-.entry-form label textarea:focus {
+.entry-form textarea:focus {
   color: red;
 }
 
@@ -68,6 +68,27 @@ textarea {
   width: 80%;
   max-width: 500px;
   resize: none;
+}
+.article-export {
+  margin: 50px;
+  padding: 5px;
+  border: solid 1px #ccc
+
+}
+
+.article-export span {
+  font-style: italic;
+  color: #666
+}
+
+.article-export input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  display: block;
+  min-height: 100px;
+  border-bottom: solid 1px #ccc
 }
 
 @media only screen and (min-width: 640px) {

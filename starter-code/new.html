@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <!-- NOTE (stretch goal): To fully incorporate the highlighting library "hljs" we need to fill the empty link tag below to refer to a CSS file that will handle our text highlighting -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="styleshheet">
     <link>
     <!-- TODO: We want our new article form to be able to display a preview of the article that is being entered. Thus, we need code here that will recreate the same structure of our other articles. What do you think we need to add here? -->
       <script id="article-template" type="text/x-handlebars-template">
@@ -43,8 +44,28 @@
         </ul>
       </nav>
     </header>
-    <main class="clearfix">
 
+    <main class="clearfix">
+      <pre>
+        <code class="css">
+@media only screen and (min-width: 640px) {
+.icon-menu {
+display: none;
+}
+
+.main-nav {
+padding: .2em .2em .2em 2em;
+}
+
+.main-nav ul {
+display: block;
+}
+
+.main-nav ul li {
+display: inline;
+border-bott
+        </code>
+      </pre>
       <section id="write" class="tab-content">
         <h1>Create New Article</h1>
         <!-- TODO: Set up a form to accept user input for a new blog article. Remember that we need:
@@ -86,8 +107,12 @@
         <!-- NOTE: This is where we will display our article preview -->
       </section>
 
-      <section id="article-export">
+      <section id="article-export" class="article-export">
         <!-- TODO: Refer to the preview image to see what we will be building here: we need a container of some kind to hold a JSON export of our article. Ideally this container would show only a incipit (short preview) of the JSON and also be clickable to allow easy selection of the text it holds. What kind of element could we use for this? -->
+        <label id="export-field">
+          <input id="article-json" type="text" readonly/>
+          <span>After you've put yur article information above, copy the JSON, and paste it into blogArticles.js</span>
+        </label>
       </section>
 
     </main>
@@ -98,6 +123,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <!-- NOTE (stretch goal): Include script tags for 3rd party libraries to enable Markdown rendering and code syntax highlighting. If we are not using a CDN and instead choose to store these scripts with our project, make sure to put them into an appropriate location in the 'vendor' directory. Keep in mind that if we want these features to render properly on our main blog page (index.html) that we'll need to add those scripts over there, too. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="scripts/blogArticles.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
@@ -106,6 +132,7 @@
       // (Look at the bottom of index.html as a reference. Since we are now using our JS on two different HTML pages that have different needs as to what parts of the code they utilize, we need to build a function that inializes each page.)
       //  Hint: Look in articleView.js for a function that does this.
       articleView.initNewArticlePage();
+      hljs.initHighlightingOnLoad();
     </script>
   </body>
 </html>
