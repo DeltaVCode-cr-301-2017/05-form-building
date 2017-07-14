@@ -95,7 +95,7 @@ articleView.create = function() {
   var article;
   $('#article-preview').empty();
 
-    // TODO: Instantiate an article based on what's in the form fields:
+  // TODO: Instantiate an article based on what's in the form fields:
 
   article= new Article({
     title: $('#article-title').val(),
