@@ -51,7 +51,34 @@
   font-weight: bold;
   text-decoration: none;
 }
-
+.entry-form label{
+  display: block;
+  margin: 15px 0;
+  font-weight: bold;
+}
+.entry-form textarea{
+  width: 80%;
+  max-width: 500px;
+  resize: none;
+}
+.article-export{
+  margin: 50px;
+  padding: 5px;
+  border: solid 1px #ccc;
+}
+.article-export span{
+  font-style: italic;
+  color: #666;
+}
+.article-export input{
+  margin: 0;
+  padding: 0 0 20px;
+  border: none;
+  display: block;
+  min-height: 100px;
+  width: 100%;
+  border-bottom: solid 1px #ccc;
+}
 /*TODO: Add CSS for the "article-export" portion of our new page*/
 
 
