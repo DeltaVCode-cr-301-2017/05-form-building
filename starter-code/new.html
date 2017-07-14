@@ -41,6 +41,30 @@
                    4. Author's URL
                    5. Article category
                    6. Some way to know if this article is a draft or is published -->
+        <form action="#" id="new-form" class="entry-form">
+          <label>
+            <span>Title:</span>
+            <input type="text" id="article-title" placeholder="Article Title" required />
+          </label>
+          <label for="article-body"><span>Article Body:</span></label>
+            <textarea name="article-body" id="article-body" rows="8" cols="40"  required></textarea>
+          <label>
+            <span>Author:</span>
+            <input type="text" id="article-author" placeholder="Article Author" required />
+          </label>
+          <label>
+            <span>Authors Url:</span>
+            <input type="text" id="article-authorsurl" placeholder="Article Authors Url" required />
+          </label>
+          <label>
+            <span>Category:</span>
+            <input type="text" id="article-category" placeholder="Category" required />
+          </label>
+          <label>
+            <input type="checkbox" id="article-published" />
+            <span>Published</span>
+          </label>
+        </from>
       </section>
 
       <section id="articles" class="tab-content">
@@ -48,7 +72,7 @@
       </section>
 
       <section id="article-export">
-        <!-- TODO: Refer to the preview image to see what we will be building here: we need a container of some kind to hold a JSON export of our article. Ideally this container would show only a incipit (short preview) of the JSON and also be clickable to allow easy selection of the text it holds. What kind of element could we use for this? -->
+        <!--TODO: Refer to the preview image to see what we will be building here: we need a container of some kind to hold a JSON export of our article. Ideally this container would show only a incipit (short preview) of the JSON and also be clickable to allow easy selection of the text it holds. What kind of element could we use for this? -->
       </section>
 
     </main>

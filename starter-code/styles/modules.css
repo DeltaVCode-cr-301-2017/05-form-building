@@ -51,7 +51,16 @@
   font-weight: bold;
   text-decoration: none;
 }
-
+.entry-form label{
+  display: block;
+  margin: 15px 0;
+  font-weight: bold;
+}
+.entry-form textarea{
+  width: 80%;
+  max-width: 500px;
+  resize: none;
+}
 /*TODO: Add CSS for the "article-export" portion of our new page*/
 
 
