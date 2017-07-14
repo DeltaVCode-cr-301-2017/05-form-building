@@ -74,7 +74,8 @@ articleView.setTeasers = function() {
 };
 
 articleView.initNewArticlePage = function() {
-  // TODO: Ensure the main .tab-content area is revealed. We might add more tabs later or otherwise edit the tab navigation.
+  articleView.handleMainNav();
+  // DONE: Ensure the main .tab-content area is revealed. We might add more tabs later or otherwise edit the tab navigation.
 
 
   // TODO: The new articles we create will be copy/pasted into our source data file.
